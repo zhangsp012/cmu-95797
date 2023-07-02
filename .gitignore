@@ -161,3 +161,4 @@ cython_debug/
 
 # project specific
 data/
+main.db
