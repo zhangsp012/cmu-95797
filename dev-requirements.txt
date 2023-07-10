@@ -1,2 +1,8 @@
-dbt-duckdb v0.8.1
+duckdb v0.8.1
+dbt
+    Core:
+    - installed: 1.5.2
+    - latest:    1.5.2 
 
+    Plugins:
+    - duckdb: 1.5.2 

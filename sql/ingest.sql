@@ -18,7 +18,7 @@ CREATE TABLE central_park_weather AS SELECT * FROM read_csv_auto(['/Users/shaope
 
 CREATE TABLE daily_citi_bike_trip_counts_and_weather AS SELECT * FROM read_csv_auto(['/Users/shaopengzhang/Downloads/data/daily_citi_bike_trip_counts_and_weather.csv'], union_by_name=True, all_varchar=True, filename=True);
 
-CREATE TABLE fhv_bases AS SELECT * FROM read_csv_auto(['/Users/shaopengzhang/Downloads/data/fhv_bases.csv'], union_by_name=True, all_varchar=True, filename=True);
+CREATE TABLE fhv_bases AS SELECT * FROM read_csv_auto(['/Users/shaopengzhang/Downloads/data/fhv_bases.csv'], union_by_name=True, all_varchar=True, filename=True, header=True);
 
 CREATE TABLE fhv_tripdata AS SELECT * FROM read_parquet('/Users/shaopengzhang/Downloads/data/taxi/fhv_tripdata_*.parquet', union_by_name=True, filename=True);
 
