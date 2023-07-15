@@ -4,7 +4,7 @@ with source as (
     select * from {{ source('main', 'yellow_tripdata') }}
 
 ),
--- some garabage data are removed by the where statment
+
 renamed as (
 
     select
@@ -30,10 +30,6 @@ renamed as (
         filename
 
     from source
-    WHERE passenger_count > 0 and passenger_count < 10 
-    and trip_distance > 0 and trip_distance < 1000 
-    and fare_amount > 0 and tip_amount >=0  and tolls_amount >= 0 and total_amount < 3000 
-    and tpep_dropoff_datetime > tpep_pickup_datetime and tpep_dropoff_datetime < current_date
 
 )
 

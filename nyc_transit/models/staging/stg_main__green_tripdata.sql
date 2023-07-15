@@ -6,8 +6,6 @@ with source as (
 
 ),
 
--- some garabage data are removed by the where statment
-
 renamed as (
 
     select
@@ -33,7 +31,7 @@ renamed as (
         filename
 
     from source
-    WHERE passenger_count > 0 and trip_distance > 0 and fare_amount > 0 and tip_amount >=0  and trip_distance < 1000
+
 
 )
 
