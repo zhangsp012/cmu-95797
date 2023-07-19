@@ -29,3 +29,12 @@
     - drop useless columns
     - unify schemas (bike data)
     - remove garbage records
+
+## Week 3 Notes
+
+-  Add dbt tests & documentation to sources.yml
+- Create a schema.yml for staging using dbt-codegen’s
+- Add dbt tests & documentation for staging models
+- Do dbt build to run models and tests
+- Adjust tests and/or fix problems in models
+- submitted screenshots in answers/
