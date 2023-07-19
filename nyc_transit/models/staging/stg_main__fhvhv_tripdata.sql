@@ -1,4 +1,4 @@
--- some garabage data are removed by the where statment
+
 with source as (
 
     select * from {{ source('main', 'fhvhv_tripdata') }}
@@ -9,8 +9,11 @@ renamed as (
 
     select
         hvfhs_license_num,
-        dispatching_base_num,
-        originating_base_num,
+        -- actions below to make sure all base_num in consistent format
+        -- This actually does not have any impact on this batch of data
+        -- Many data is still missing proper foreign keys
+        trim(upper(dispatching_base_num)) as dispatching_base_num,
+        trim(upper(originating_base_num)) as originating_base_num,
         request_datetime,
         on_scene_datetime,
         pickup_datetime,

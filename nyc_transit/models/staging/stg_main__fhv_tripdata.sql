@@ -8,12 +8,14 @@ with source as (
 renamed as (
 
     select
-        dispatching_base_num,
+        -- clean up the dispatching_base_num and affliated_base_number to properly link to base_number in stg_main_fhv_bases
+        -- This can only fix part of the issue, many records still missing foreign keys
+        trim(upper(dispatching_base_num)) as  dispatching_base_num,
         pickup_datetime,
         dropoff_datetime,
         pulocationid,
         dolocationid,
-        affiliated_base_number,
+        trim(upper(affiliated_base_number)) as affiliated_base_number,
         filename
 
     from source

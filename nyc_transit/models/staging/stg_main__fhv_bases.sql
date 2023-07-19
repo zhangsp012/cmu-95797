@@ -8,7 +8,8 @@ with source as (
 renamed as (
 
     select
-        base_number,
+        -- clean up the base_num to be properly linked as foreign keys
+        trim(upper(base_number)) as base_number,
         base_name,
         dba,
         dba_category,
