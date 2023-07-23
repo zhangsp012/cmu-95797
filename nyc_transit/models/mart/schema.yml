@@ -1,0 +1,209 @@
+models:
+  - name: mart__dim_bike_stations
+    description: "bike stations with name, latitude and longitude"
+    columns:
+      - name: station_id
+        description: "bike station id, primary key"
+        tests:
+              - unique
+              - dbt_expectations.expect_column_to_exist
+
+      - name: station_name
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+      - name: station_lat
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+      - name: station_lng
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+  - name: mart__dim_locations
+    description: "taxi locations, used to join with pulocationid and dolocationid,
+      taken from dbt seed. Not tested as data is small enough to check visually, as should be the case with use of seeds"
+    columns:
+      - name: locationid
+        description: "primary key"
+        tests:
+          - dbt_expectations.expect_column_to_exist
+          - not_null
+
+      - name: borough
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+      - name: zone
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+      - name: service_zone
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+  - name: mart__fact_all_bike_trips
+    description: "bike trip data normalised with station data stripped out to dim"
+    columns:
+      - name: started_at_ts
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+      - name: ended_at_ts
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+      - name: duration_min
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+              max_value: 9000
+              config:
+                severity: warn
+        
+
+      - name: duration_sec
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+              max_value: 540000
+              config:
+                severity: warn
+  
+
+      - name: start_station_id
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+      - name: end_station_id
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+  - name: mart__fact_all_taxi_trips
+    description: "all taxi trip data for analysis"
+    columns:
+      - name: type
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+      - name: pickup_datetime
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+      - name: dropoff_datetime
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+      - name: duration_min
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+              max_value: 9000
+              config:
+                severity: warn
+
+
+      - name: duration_sec
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+              max_value: 540000
+              config:
+                severity: warn
+
+      - name: pulocationid
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+      - name: dolocationid
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+  - name: mart__fact_all_trips_daily
+    description: "all trips including bikes and taxis grouped by day, with averaged trip duration"
+    columns:
+      - name: type
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+      - name: date
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+      - name: trips
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+      - name: average_trip_duration_min
+        description: ""
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+  - name: mart__fact_all_trips
+    description: "all trips including bikes and taxis with duration"
+    columns:
+      - name: type
+        description: ""
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_to_exist
+
+      - name: started_at_ts
+        description: ""
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_to_exist
+
+      - name: ended_at_ts
+        description: ""
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_to_exist
+
+      - name: duration_min
+        description: ""
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_to_exist
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+              max_value: 9000
+              config:
+                severity: warn
+
+      - name: duration_sec
+        description: ""
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+              max_value: 540000
+              config:
+                severity: warn
+          - dbt_expectations.expect_column_to_exist

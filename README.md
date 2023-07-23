@@ -38,3 +38,19 @@
 - Do dbt build to run models and tests
 - Adjust tests and/or fix problems in models
 - submitted screenshots in answers/
+
+## Week 4 Notes
+created following mart tables
+- mart__fact_all_bike_trips
+- mart__fact_all_taxi_trips
+- mart__fact_all_trips_daily
+- mart__fact_all_trips
+- mart__dim_bike_stations
+- mart__dim_locations
+
+Performed following analyses:
+- bike_trips_and_duration_by_weekday.sql - count & total time of bikes trips by weekday
+- taxi_trips_ending_at_airport.sql - total number of trips ending in service_zones 'Airports' or 'EWR'
+- inter_borough_taxi_trips_by_weekday.sql : by weekday, count of total trips, trips starting and ending in a different borough, and percentage w/ different start/end
+
+Results of the analyses above are stored in answers/
