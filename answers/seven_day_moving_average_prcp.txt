@@ -1,0 +1,50 @@
+┌─────────────┬──────────────────────┬────────────┬───┬───────┬───────┬──────────────────────┬──────────────────────┐
+│   STATION   │         NAME         │    date    │ … │ tmax  │ tmin  │       filename       │ seven_day_average_…  │
+│   varchar   │       varchar        │    date    │   │ int32 │ int32 │       varchar        │        double        │
+├─────────────┼──────────────────────┼────────────┼───┼───────┼───────┼──────────────────────┼──────────────────────┤
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-01 │ … │    77 │    72 │ /Users/shaopengzha…  │               0.3625 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-02 │ … │    82 │    72 │ /Users/shaopengzha…  │                 0.29 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-03 │ … │    83 │    73 │ /Users/shaopengzha…  │  0.24166666666666667 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-04 │ … │    87 │    75 │ /Users/shaopengzha…  │  0.20714285714285713 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-05 │ … │    90 │    76 │ /Users/shaopengzha…  │  0.11857142857142856 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-06 │ … │    92 │    78 │ /Users/shaopengzha…  │  0.13999999999999999 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-07 │ … │    92 │    78 │ /Users/shaopengzha…  │   0.0642857142857143 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-08 │ … │    89 │    73 │ /Users/shaopengzha…  │   0.0642857142857143 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-09 │ … │    88 │    74 │ /Users/shaopengzha…  │  0.09999999999999999 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-10 │ … │    85 │    75 │ /Users/shaopengzha…  │  0.10857142857142857 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-11 │ … │    84 │    76 │ /Users/shaopengzha…  │  0.10857142857142857 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-12 │ … │    77 │    68 │ /Users/shaopengzha…  │  0.07714285714285715 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-13 │ … │    81 │    67 │ /Users/shaopengzha…  │  0.04428571428571428 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-14 │ … │    90 │    74 │ /Users/shaopengzha…  │  0.04428571428571428 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-15 │ … │    94 │    78 │ /Users/shaopengzha…  │  0.04428571428571428 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-16 │ … │    94 │    77 │ /Users/shaopengzha…  │ 0.008571428571428572 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-17 │ … │    97 │    79 │ /Users/shaopengzha…  │                  0.0 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-18 │ … │    98 │    81 │ /Users/shaopengzha…  │                  0.0 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-19 │ … │    96 │    83 │ /Users/shaopengzha…  │ 0.008571428571428572 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2013-07-20 │ … │    93 │    81 │ /Users/shaopengzha…  │  0.05285714285714286 │
+│      ·      │          ·           │     ·      │ · │     · │     · │          ·           │            ·         │
+│      ·      │          ·           │     ·      │ · │     · │     · │          ·           │            ·         │
+│      ·      │          ·           │     ·      │ · │     · │     · │          ·           │            ·         │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-12 │ … │    93 │    74 │ /Users/shaopengzha…  │   0.1442857142857143 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-13 │ … │    94 │    78 │ /Users/shaopengzha…  │   0.1442857142857143 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-14 │ … │    88 │    76 │ /Users/shaopengzha…  │ 0.025714285714285714 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-15 │ … │    83 │    70 │ /Users/shaopengzha…  │                  0.0 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-16 │ … │    83 │    69 │ /Users/shaopengzha…  │ 0.028571428571428574 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-17 │ … │    81 │    73 │ /Users/shaopengzha…  │ 0.028571428571428574 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-18 │ … │    83 │    74 │ /Users/shaopengzha…  │   0.6642857142857144 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-19 │ … │    85 │    75 │ /Users/shaopengzha…  │   1.0457142857142858 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-20 │ … │    82 │    75 │ /Users/shaopengzha…  │   1.1985714285714286 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-21 │ … │    82 │    73 │ /Users/shaopengzha…  │   1.1985714285714286 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-22 │ … │    76 │    70 │ /Users/shaopengzha…  │   1.1985714285714286 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-23 │ … │    83 │    71 │ /Users/shaopengzha…  │                 1.17 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-24 │ … │    89 │    72 │ /Users/shaopengzha…  │   1.2657142857142856 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-25 │ … │    91 │    72 │ /Users/shaopengzha…  │                 0.63 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-26 │ … │    91 │    78 │ /Users/shaopengzha…  │   0.2485714285714286 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-27 │ … │    93 │    75 │ /Users/shaopengzha…  │  0.09571428571428572 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-28 │ … │    80 │    68 │ /Users/shaopengzha…  │  0.09571428571428572 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-29 │ … │    76 │    67 │ /Users/shaopengzha…  │  0.11166666666666668 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-30 │ … │    85 │    73 │ /Users/shaopengzha…  │                0.134 │
+│ USW00094728 │ NY CITY CENTRAL PA…  │ 2021-08-31 │ … │    83 │    73 │ /Users/shaopengzha…  │                  0.0 │
+├─────────────┴──────────────────────┴────────────┴───┴───────┴───────┴──────────────────────┴──────────────────────┤
+│ 2984 rows (40 shown)                                                                         11 columns (7 shown) │
+└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

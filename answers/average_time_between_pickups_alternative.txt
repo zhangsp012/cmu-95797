@@ -1,0 +1,50 @@
+┌───────────────────────────────────────────────┬──────────────────────────────┐
+│                     zone                      │ average_time_between_pickups │
+│                    varchar                    │        decimal(18,3)         │
+├───────────────────────────────────────────────┼──────────────────────────────┤
+│ Governor's Island/Ellis Island/Liberty Island │                    11580.888 │
+│ Corona                                        │                        0.878 │
+│ Newark Airport                                │                       54.530 │
+│ Jamaica Bay                                   │                     1039.451 │
+│ Allerton/Pelham Gardens                       │                        1.340 │
+│ Alphabet City                                 │                        0.860 │
+│ Arden Heights                                 │                       11.986 │
+│ Arrochar/Fort Wadsworth                       │                        5.845 │
+│ Astoria                                       │                        2.055 │
+│ Astoria Park                                  │                       76.838 │
+│ Auburndale                                    │                        3.896 │
+│ Baisley Park                                  │                        5.750 │
+│ Bath Beach                                    │                        2.823 │
+│ Battery Park                                  │                       21.315 │
+│ Battery Park City                             │                        4.164 │
+│ Bay Ridge                                     │                        0.597 │
+│ Bay Terrace/Fort Totten                       │                        4.664 │
+│ Bayside                                       │                        1.762 │
+│ Bedford                                       │                        0.337 │
+│ Bedford Park                                  │                        0.576 │
+│      ·                                        │                          ·   │
+│      ·                                        │                          ·   │
+│      ·                                        │                          ·   │
+│ Willets Point                                 │                       47.135 │
+│ Williamsbridge/Olinville                      │                        0.576 │
+│ Williamsburg (North Side)                     │                        2.404 │
+│ Williamsburg (South Side)                     │                        0.409 │
+│ Windsor Terrace                               │                       12.795 │
+│ Woodhaven                                     │                        0.948 │
+│ Woodlawn/Wakefield                            │                        0.943 │
+│ Woodside                                      │                        4.883 │
+│ World Trade Center                            │                        0.851 │
+│ Yorkville East                                │                        3.279 │
+│ Yorkville West                                │                        2.213 │
+│ NV                                            │                        1.122 │
+│ NA                                            │                       21.060 │
+│ Country Club                                  │                       10.174 │
+│ Hudson Sq                                     │                        5.697 │
+│ Lenox Hill West                               │                        1.854 │
+│ Mount Hope                                    │                        0.533 │
+│ West Chelsea/Hudson Yards                     │                        1.985 │
+│ West Concourse                                │                        3.604 │
+│ Old Astoria                                   │                        5.687 │
+├───────────────────────────────────────────────┴──────────────────────────────┤
+│ 262 rows (40 shown)                                                2 columns │
+└──────────────────────────────────────────────────────────────────────────────┘

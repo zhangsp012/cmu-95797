@@ -1,0 +1,50 @@
+┌───────────────┬───────────────────────────────────────────────┬────────────┬───────────────────────────┐
+│    Borough    │                     Zone                      │ trip_count │ average_trip_duration_min │
+│    varchar    │                    varchar                    │   int64    │          double           │
+├───────────────┼───────────────────────────────────────────────┼────────────┼───────────────────────────┤
+│ Queens        │ North Corona                                  │     851485 │                     15.53 │
+│ Queens        │ Elmhurst                                      │    2459116 │                     16.53 │
+│ Queens        │ Jackson Heights                               │    2657024 │                      16.3 │
+│ Manhattan     │ East Chelsea                                  │    4195517 │                     18.37 │
+│ Queens        │ Woodside                                      │    1400216 │                     15.77 │
+│ Manhattan     │ Battery Park City                             │    1641907 │                     19.52 │
+│ Brooklyn      │ Greenpoint                                    │    2418765 │                     18.09 │
+│ Manhattan     │ Lincoln Square East                           │    3708754 │                      16.5 │
+│ Brooklyn      │ Clinton Hill                                  │    1985685 │                     18.21 │
+│ Bronx         │ Pelham Parkway                                │    1163874 │                     16.04 │
+│ Bronx         │ Pelham Bay Park                               │      77580 │                     16.04 │
+│ Bronx         │ Eastchester                                   │    1021426 │                     15.15 │
+│ Bronx         │ Bronxdale                                     │     999044 │                     15.71 │
+│ Manhattan     │ Upper West Side South                         │    3632365 │                     16.26 │
+│ Manhattan     │ Midtown East                                  │    4016379 │                     17.51 │
+│ Manhattan     │ World Trade Center                            │    1237472 │                     21.52 │
+│ Bronx         │ Woodlawn/Wakefield                            │    1116256 │                     15.58 │
+│ Manhattan     │ West Chelsea/Hudson Yards                     │    3451329 │                     18.05 │
+│ Brooklyn      │ Crown Heights South                           │    1374202 │                     18.25 │
+│ Brooklyn      │ Prospect-Lefferts Gardens                     │    2899021 │                     18.54 │
+│   ·           │       ·                                       │        ·   │                       ·   │
+│   ·           │       ·                                       │        ·   │                       ·   │
+│   ·           │       ·                                       │        ·   │                       ·   │
+│ Queens        │ Broad Channel                                 │      15717 │                     18.47 │
+│ Manhattan     │ Governor's Island/Ellis Island/Liberty Island │         90 │                     21.46 │
+│ Queens        │ Forest Park/Highland Park                     │      50841 │                     17.81 │
+│ Queens        │ Astoria Park                                  │      13699 │                      17.6 │
+│ Queens        │ Murray Hill-Queens                            │     639783 │                     18.65 │
+│ Queens        │ Middle Village                                │     678888 │                     16.45 │
+│ Brooklyn      │ Bay Ridge                                     │    1762268 │                     17.44 │
+│ Queens        │ Ridgewood                                     │    2018160 │                     17.74 │
+│ Manhattan     │ Battery Park                                  │      49384 │                     21.97 │
+│ Queens        │ Jamaica Bay                                   │       1012 │                     27.42 │
+│ Brooklyn      │ Green-Wood Cemetery                           │      15292 │                     17.73 │
+│ Staten Island │ Great Kills Park                              │        600 │                     20.53 │
+│ Staten Island │ Arrochar/Fort Wadsworth                       │     180094 │                     16.95 │
+│ Manhattan     │ Alphabet City                                 │    1224381 │                     17.87 │
+│ Staten Island │ Rossville/Woodrow                             │      75021 │                     16.76 │
+│ Manhattan     │ Midtown North                                 │    3456358 │                     18.17 │
+│ Manhattan     │ East Harlem South                             │    3180129 │                     17.47 │
+│ Manhattan     │ Greenwich Village North                       │    2618345 │                     17.16 │
+│ Bronx         │ Fordham South                                 │     870116 │                     15.73 │
+│ Bronx         │ Rikers Island                                 │         84 │                     37.89 │
+├───────────────┴───────────────────────────────────────────────┴────────────┴───────────────────────────┤
+│ 262 rows (40 shown)                                                                          4 columns │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────┘

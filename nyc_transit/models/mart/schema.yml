@@ -207,3 +207,16 @@ models:
               config:
                 severity: warn
           - dbt_expectations.expect_column_to_exist
+      
+  - name: mart__fact_trips_by_borough
+    description: "number of trips grouped by borough"
+    columns:
+      - name: borough
+        description: "name of the pick up borough"
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+      - name: trip_count
+        description: "number of trips"
+        tests:
+          - dbt_expectations.expect_column_to_exist
