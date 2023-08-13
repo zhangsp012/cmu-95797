@@ -84,3 +84,12 @@ created analysis queries to do the following
 Find the average time between taxi pick ups per zone
 - days_before_precip_more_bike_trips.sql
  determine if days immediately preceding precipitation or snow had more bike trips on average than the days with precipitation or snow.
+
+ ## Week 6 Notes:
+
+-   Conducted in-depth data analytics to NYC Transit data.
+-   Generated reports using the "Evidence" reporting tool, incorporating embedded SQL for data extraction and visualization. 
+- Screenshots of the analysis report are under answers, file name report_webpage#*
+-   Deployed the report on a webpage hosted by an Nginx server within a Docker container. This container was hosted on an AWS EC2 instance. 
+- The Nginx server was secured using TLS, incorporating the Diffie-Hellman key exchange for enhanced security.
+- The Nginx server conf file and dockerfile are under the root folder for reference
